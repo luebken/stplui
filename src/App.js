@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Menu } from 'semantic-ui-react'
+
 import {
   BrowserRouter as Router,
   Route,
@@ -15,17 +17,23 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          
-          <ul className="App-header">
-            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-            <li><NavLink to="/about"activeClassName="active">About</NavLink></li>
-            <li><NavLink to="/topics" activeClassName="active">Topics</NavLink></li>
-          </ul>
+          <Menu>
+            <Menu.Item exact name='home' as={NavLink} to='/'>
+              Home
+            </Menu.Item>
+            <Menu.Item name='package' as={NavLink} to='/about'>
+              Package
+            </Menu.Item>
+            <Menu.Item name='home' as={NavLink} to='/topics'>
+              Apps
+            </Menu.Item>
 
-          <div className="App-content">
-            <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/topics" component={Topics}/>
+          </Menu>
+
+          <div className="App-content">
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/topics" component={Topics} />
           </div>
 
         </div>
