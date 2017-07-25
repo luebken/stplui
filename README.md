@@ -9,3 +9,8 @@
 ## TEst
 
   $ npm start
+
+
+## Resources:
+
+* https://marmelab.com/admin-on-rest-demo/#/login
