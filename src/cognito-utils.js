@@ -1,14 +1,8 @@
 import {
   CognitoUser,
   CognitoUserPool,
-  CognitoUserAttribute,
   AuthenticationDetails,
 } from "amazon-cognito-identity-js";
-import {
-  CognitoIdentityServiceProvider
-} from "aws-sdk";
-
-import AWS from "aws-sdk";
 
 
 const cognitoSettings = {
@@ -53,7 +47,7 @@ function getCurrentUser() {
   return getCurrentPool().getCurrentUser()
 }
 
-function decodeUserInfo(token) {
+export function decodeUserInfo(token) {
   return JSON.parse(
     window.atob(
       token.split('.')[1]
@@ -86,7 +80,7 @@ function myToken() {
   })
 }
 
-function withToken() {
+export function withToken() {
   return myToken().catch(err => {
     return Promise.reject('No user found')
   })

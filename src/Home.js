@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Card, Icon, Divider } from 'semantic-ui-react'
+import { Card, Icon, Divider } from 'semantic-ui-react'
 
 
 class Home extends Component {
