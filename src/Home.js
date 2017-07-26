@@ -6,9 +6,9 @@ class Home extends Component {
   render () {
       return (
         <div>
-          <h2 style={{ 'text-align': 'center', 'padding': '50px' }}> The shazam for apps </h2>
+          <h2 style={{ 'textAlign': 'center', 'padding': '50px' }}> The shazam for apps </h2>
 
-          <p style={{ 'text-align': 'center', 'padding': '50px', 'font-size': 'large' }}>
+          <p style={{ 'textAlign': 'center', 'padding': '50px', 'fontSize': 'large' }}>
           It’s time to get sanity back into software development. <br/>
           Choose the right packages and build up sustainable, secure and compliant applications.
           </p>
@@ -16,7 +16,8 @@ class Home extends Component {
         <Divider style={{ 'margin': '50px' }}/>
 
         <Card.Group>
-          <Card href='#'>
+          {/* hack */}
+          <Card href='#' style={{ 'marginLeft': '35px' }}>
             <Card.Content>
               <Card.Header> Vulnerabilty <Icon name='tag' /> </Card.Header>
               <Card.Meta> Subheading </Card.Meta>
