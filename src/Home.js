@@ -47,7 +47,9 @@ class Home extends Component {
         <Divider style={{ 'margin': '50px' }}/>
 
 
-
+        <p>
+          TODO show some top level components from github here
+        </p>
         </div>
       );
     }
