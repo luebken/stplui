@@ -28,7 +28,7 @@ class App extends Component {
       <div className="App">
         <Menu>
           <Menu.Item exact name='home' as={NavLink} to='/'>
-            Home
+            stpl.io
         </Menu.Item>
           <Menu.Item name='package' as={NavLink} to='/about'>
             Package
