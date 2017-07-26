@@ -8,8 +8,8 @@ import {
 } from 'react-router-dom'
 import './App.css';
 import Home from './Home';
-import About from './About';
-import Topics from './Topics';
+import Package from './Package';
+import Application from './Application';
 import Login from './LoginLayout';
 import * as cognito from './cognito-utils';
 
@@ -30,11 +30,11 @@ class App extends Component {
           <Menu.Item exact name='home' as={NavLink} to='/'>
             stpl.io
         </Menu.Item>
-          <Menu.Item name='package' as={NavLink} to='/about'>
+          <Menu.Item name='package' as={NavLink} to='/package'>
             Package
         </Menu.Item>
-          <Menu.Item name='home' as={NavLink} to='/topics'>
-            Apps
+          <Menu.Item name='app' as={NavLink} to='/app'>
+            App
         </Menu.Item>
           <Menu.Menu position='right'>
             <Menu.Item name='logout' onClick={this.handleLogOut} />
@@ -43,8 +43,8 @@ class App extends Component {
 
         <div className="App-content">
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/topics" component={Topics} />
+          <Route path="/package" component={Package} />
+          <Route path="/app" component={Application} />
         </div>
       </div>
     </Router>

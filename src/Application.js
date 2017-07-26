@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Topics extends Component {
+class Application extends Component {
   render () {
       return (
         <div>
-          <h2>Topics</h2>
+          <h2>Application</h2>
           <p>Cras facilisis urna ornare ex volutpat, et
           convallis erat elementum. Ut aliquam, ipsum vitae
           gravida suscipit, metus dui bibendum est, eget rhoncus nibh
@@ -18,4 +18,4 @@ class Topics extends Component {
     }
 }
 
-export default Topics;
+export default Application;
