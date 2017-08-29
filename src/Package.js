@@ -42,7 +42,7 @@ class InputSearch extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    window.location = this.state.value
+    window.location = '/package/npm/' + this.state.value //TODO hackisch
   }
 
   render() {
