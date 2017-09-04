@@ -80,7 +80,7 @@ function myToken() {
   })
 }
 
-export function withToken() {
+export function WithToken() {
   return myToken().catch(err => {
     return Promise.reject('No user found')
   })
